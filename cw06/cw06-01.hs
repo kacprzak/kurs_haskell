@@ -1,7 +1,7 @@
 import Text.Printf
 
-qEquation :: (Double, Double, Double) -> (Double, Double)
-qEquation (a, b, c) = (x1, x2)
+qEquation :: Double -> Double -> Double -> (Double, Double)
+qEquation a b c = (x1, x2)
   where
     x1 = e + sqrt d / (2 * a)
     x2 = e - sqrt d / (2 * a)
@@ -16,4 +16,4 @@ main = do
     a = 2
     b = 1
     c = (-2)
-    (x1, x2) = qEquation (a, b, c)
+    (x1, x2) = qEquation a b c
