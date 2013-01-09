@@ -1,3 +1,4 @@
+-- cw06-01
 import Text.Printf
 
 qEquation :: Double -> Double -> Double -> (Double, Double)

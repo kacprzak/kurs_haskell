@@ -1,3 +1,4 @@
+-- cw06-04
 import Text.Printf
 import System.IO
 
