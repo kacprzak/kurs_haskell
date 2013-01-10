@@ -1,7 +1,7 @@
 CC = ghc
 CFLAGS = --make
 
-PROGS = cw06-01 cw06-02 cw06-03 cw06-04 cw06-05 cw06-06
+PROGS = cw07-01 cw07-02 cw07-03 #cw07-04 cw07-05 cw07-06
 
 all: $(PROGS)
 
