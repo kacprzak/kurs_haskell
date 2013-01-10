@@ -39,5 +39,3 @@ main = do
   mainLoop inh outh
   hClose outh
   hClose inh
-
-
