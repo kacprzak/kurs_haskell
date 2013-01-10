@@ -37,5 +37,3 @@ main = do
   inh <- openFile "cw06-04.txt" ReadMode
   mainLoop inh
   hClose inh
-
-

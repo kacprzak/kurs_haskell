@@ -38,4 +38,3 @@ main = do
   if not r
     then return ()
     else do main
-

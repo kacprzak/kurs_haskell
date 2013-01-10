@@ -10,4 +10,3 @@ main = do argv <- getArgs
             then let n = read (head argv)
                   in putStrLn (show (silnia n))
             else putStrLn "Nie podano argumentu!"
-            

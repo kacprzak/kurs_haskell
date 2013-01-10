@@ -24,4 +24,3 @@ main = do
   putStrLn "Dla równania kwadratowego o współczynnikach:"
   printf " a = %.2f, b = %.2f i c = %.2f\n" a b c
   (uncurry $ printf "Obliczone pierwiastki to:\n x1 = %.2f, x2 = %.2f\n") $ qEquation a b c
-

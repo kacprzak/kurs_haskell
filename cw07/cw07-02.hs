@@ -23,5 +23,3 @@ main = do argv <- getArgs
                      c = read (argv !! 2)
                  in qEquationUI a b c
             else putStrLn "Sposób użycia: cw07-02 a b c"
-
-
