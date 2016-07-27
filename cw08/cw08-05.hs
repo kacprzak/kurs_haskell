@@ -48,7 +48,7 @@ mainLoop = do
   opt <- prompt "> "
   result <- handleOption opt
   putStrLn result
-  if opt == 4 then return() else mainLoop
+  if opt == 4 then return () else mainLoop
 
 main = do
   hSetBuffering stdin LineBuffering
