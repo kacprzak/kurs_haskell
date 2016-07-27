@@ -1,4 +1,4 @@
-PROGS = cw08-03 cw08-04
+PROGS = cw08-03 cw08-04 cw08-05
 
 all: $(PROGS)
 
