@@ -14,8 +14,8 @@ qEquation a b c = (x1, x2)
 qEquationResultToString :: (Double, Double) -> String
 qEquationResultToString (a, b)
   | isNaN(a) && isNaN(b) = "Równanie nie posiada rozwiązań"
-  | a == b = printf "Równanie ma jedno rozwiązanie:\n x = %.2f\n" a
-  | otherwise = printf "Obliczone pierwiastki to:\n x1 = %.2f, x2 = %.2f\n" a b
+  | a == b = printf "Równanie ma jedno rozwiązanie:\n x = %.2f" a
+  | otherwise = printf "Obliczone pierwiastki to:\n x1 = %.2f, x2 = %.2f" a b
 
 qEquationUI :: Double -> Double -> Double -> IO ()
 qEquationUI 0 _ _ = putStrLn "To nie jest równanie kwadratowe!"
@@ -27,8 +27,6 @@ qEquationUI a b c = do
 main = do putStrLn "Program obliczający pierwiastki równania kwadratowego."
           argv <- getArgs
           if not (null argv) && (length argv) == 3
-            then let a = read (head argv)
-                     b = read (argv !! 1)
-                     c = read (argv !! 2)
-                 in qEquationUI a b c
+            then let a:b:c:args = map read argv
+                  in qEquationUI a b c
             else putStrLn "Sposób użycia: cw08-03 a b c"
